@@ -1,0 +1,50 @@
+@import url("reset.css");
+
+h1 {
+    color: white;
+    background-color: black;
+}
+
+ul {
+    background-color:darkblue;
+}
+
+header h2 {
+    color: white;
+    background-color: black;
+}
+
+.article-header {
+    color:green;
+    background-color: orange;
+}
+
+.article-description {
+    color:blueviolet;
+}
+
+p mark {
+    background-color: aqua;
+}
+
+[href*="article-"] {
+    color: yellow;
+    background-color: black;
+}
+
+ul > li {
+    color:aqua;
+}
+
+li > a {
+    color:yellow;
+}
+
+#article-links {
+    color: rgb(28, 62, 185);
+    background-color: burlywood;
+}
+
+div p {
+    background-color: gainsboro;
+}
