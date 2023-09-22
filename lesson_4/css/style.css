@@ -48,3 +48,17 @@ li > a {
 div p {
     background-color: gainsboro;
 }
+
+#article-item5 .article-content ul * {
+    color: blueviolet;
+}
+
+p.first ~ p {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+p.first + p {
+    background-color: white;
+    color: cornflowerblue;
+}
