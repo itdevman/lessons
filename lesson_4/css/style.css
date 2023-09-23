@@ -49,7 +49,7 @@ div p {
     background-color: gainsboro;
 }
 
-#article-item5 .article-content ul * {
+#article-item6 .article-content ul > * {
     color: blueviolet;
 }
 
@@ -61,4 +61,8 @@ p.first ~ p {
 p.first + p {
     background-color: white;
     color: cornflowerblue;
+}
+
+.green-text {
+    color: green;
 }
