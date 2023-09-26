@@ -1,0 +1,125 @@
+/* Підключення гугл-шрифтів*/
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+
+/* Підключення шрифтів вручну*/
+@font-face {
+    font-family: "CabinSketch-Regular";
+    src: url("../fonts/CabinSketch-Regular.woff2") format("woff2"),
+        url("../fonts/CabinSketch-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: "CroissantOne-Regular";
+    src: url("../fonts/CroissantOne-Regular.woff2") format("woff2"),
+    url("../fonts/CroissantOne-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Скидання стилів*/
+@import url("reset.css");
+
+h1 {
+    font-family: "CabinSketch-Regular";
+    color: white;
+    background-color: black;
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2;
+    text-decoration: line-through;
+    text-shadow: 2px 2px 10px;
+}
+
+mark {
+    background-color: rgba(55, 120, 35, 0.2);
+}
+
+header .article-logo {
+    text-align: center;
+}
+
+header h2, .article-header, #article-links {
+    color: rgb(32, 46, 135);
+    font-size: 20px;
+    line-height: 2;
+    text-shadow: 3px 3px 5px;
+}
+
+.article-content {
+    text-indent: 10px;
+}
+
+.article-description {
+    font-family: "CroissantOne-Regular";
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+#article-item1 {
+    white-space: nowrap;
+    word-spacing: 12px;
+}
+
+.article-link-list a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.consulting-block h2 {
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 127%;
+    color: #37393F;
+    text-transform: capitalize;
+}
+
+.consulting-block h3 {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 127%;
+    color: #6B77E5;
+}
+
+.consulting-block p {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 146%;
+    color: #7D7D7D;
+}
+
+.consulting-block2 h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 127%;
+    color: #37393F;
+    text-transform: capitalize;
+}
+
+.consulting-block2 p {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 146%;
+    color: #7D7D7D;
+}
+
+.consulting-block2 ul {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 146%;
+    color: #7D7D7D;
+    line-height: 2;
+}
