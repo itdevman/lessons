@@ -1,10 +1,13 @@
 /* Підключення гугл-шрифтів*/
-@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+
+/* Скидання стилів*/
+@import url("reset.css");
 
 /* Підключення шрифтів вручну*/
 @font-face {
-    font-family: "CabinSketch-Regular";
+    font-family: "CabinSketch";
     src: url("../fonts/CabinSketch-Regular.woff2") format("woff2"),
         url("../fonts/CabinSketch-Regular.woff") format("woff");
         font-weight: normal;
@@ -13,7 +16,7 @@
 }
 
 @font-face {
-    font-family: "CroissantOne-Regular";
+    font-family: "CroissantOne";
     src: url("../fonts/CroissantOne-Regular.woff2") format("woff2"),
     url("../fonts/CroissantOne-Regular.woff") format("woff");
     font-weight: normal;
@@ -21,11 +24,10 @@
     font-display: swap;
 }
 
-/* Скидання стилів*/
-@import url("reset.css");
+
 
 h1 {
-    font-family: "CabinSketch-Regular";
+    font-family: "CabinSketch";
     color: white;
     background-color: black;
     font-size: 24px;
@@ -58,7 +60,7 @@ header h2, .article-header, #article-links {
 }
 
 .article-description {
-    font-family: "CroissantOne-Regular";
+    font-family: "CroissantOne";
     font-size: 16px;
     letter-spacing: 5px;
 }
@@ -90,14 +92,6 @@ header h2, .article-header, #article-links {
     color: #6B77E5;
 }
 
-.consulting-block p {
-    font-family: "Inter";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 146%;
-    color: #7D7D7D;
-}
-
 .consulting-block2 h2 {
     font-family: "Poppins";
     font-size: 40px;
@@ -107,7 +101,7 @@ header h2, .article-header, #article-links {
     text-transform: capitalize;
 }
 
-.consulting-block2 p {
+.consulting p {
     font-family: "Inter";
     font-size: 18px;
     font-weight: 400;
@@ -115,7 +109,7 @@ header h2, .article-header, #article-links {
     color: #7D7D7D;
 }
 
-.consulting-block2 ul {
+.consulting .list {
     font-family: "Inter";
     font-size: 18px;
     font-weight: 500;
