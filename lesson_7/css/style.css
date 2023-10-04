@@ -1,0 +1,297 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Inter", "sans-serif";
+    color: #7D7D7D;
+    font-size: 18px;
+}
+
+.header,
+.footer {
+    color: #000;
+    line-height: 150%;
+    background-color: darksalmon;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Licensing */
+.container-licensing {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.title {
+    margin-bottom: 70px;
+}
+
+.sub-title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sub-title-rectangle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+}
+
+.sub-title-text {
+    display: inline-block;
+    color: #37393F;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-text {
+    color: #37393F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 121%;
+}
+
+.item {
+    margin-bottom: 100px;
+}
+
+.item-title {
+    color: #37393F;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 121%;
+    margin-bottom: 11px;
+}
+
+.item-text {
+    color: #7D7D7D;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 146%;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.green-text {
+    color: #40DDB6
+}
+
+.item-sub-title {
+    color: #37393F;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.item-sub-title-main-text {
+    display: inline;
+}
+
+.item-sub-title-second-text {
+    display: inline;
+    font-weight: 400;
+    color: #40DDB6
+}
+
+.item-sub-title-description {
+    color: #40DDB6;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 146%;
+    margin-bottom: 24px;
+}
+
+.item-text span {
+    color: #40DDB6;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 146%;
+}
+
+/* Project Information */
+.container-project-info {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.project-info-title {
+    color: #37393F;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 127%;
+    margin-bottom: 13px;
+}
+
+.project-info-text p {
+    color: #7D7D7D;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 146%;
+    margin-bottom: 35px;
+}
+
+.project-info-text-list {
+    margin-left: 16px;
+}
+
+.project-info-text li {
+    list-style-position: inside;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.project-info-text ul li {
+    list-style-type: disc;
+}
+
+.project-info-text ol li {
+    list-style-type: decimal-leading-zero;
+}
+
+/* Women clothing */
+.container-women-clothing {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    font-size: 20px;
+}
+
+.women-clothing-title {
+    color: #807D7E;
+    font-family: "Core Sans C", "sans-serif";
+    font-size: 0px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+.women-clothing-title-rect {
+    display: inline-block;
+    background-color: #8A33FD;
+    border-radius: 10px;
+    width: 6px;
+    margin-right: 15px;
+    height: 1.2em;
+    vertical-align: middle;
+    font-size: 28px;
+}
+
+.women-clothing-title-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;
+    color: #3C4242;
+}
+
+.women-clothing-info {
+    font-family: "Causten", "sans-serif";
+    color: #807D7E;
+    padding-left: 21px;
+    line-height: 167%;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.women-clothing-info h3 {
+    font-family: "Core Sans C", "sans-serif";
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.women-clothing-info p {
+    margin-bottom: 20px;
+}
+
+.women-clothing-info .marked-text {
+    font-weight: 700;
+}
+
+/* Jewellery */
+.container-jewellery {
+    max-width: 1400px;
+    min-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 100px;
+    font-size: 30px;
+    min-height: 580px;
+}
+
+.jewellery-description {
+    font-family: "Cormorant Infant", "serif";
+    padding-top: 70px;
+    font-weight: 700;
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.jewellery-sub-title {
+    color: #D58417;
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+
+.jewellery-title {
+    color: #000;
+    font-size: 64px;
+    margin-bottom: 31px;
+}
+
+.jewellery-text {
+    color: #606060;
+    line-height: 140%;
+}
+
+.jewellery-first-img-area {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 85px;
+    width: 187px;
+    height: 350px;
+    margin-left: 85px;
+}
+
+.jewellery-first-img-border {
+    border-radius: 235px;
+    border: 1px solid #502203;
+    width: 177px;
+    height: 336px;
+}
+
+.jewellery-img {
+    border-radius: 235px;
+    margin-left: -10px;
+    margin-top: 14px;
+}
+
+.jewellery-second-img-area {
+    display: inline-block;
+    vertical-align: top;
+    width: 318px;
+    height: 520px;
+    margin-left: 30px;
+}
+
+.jewellery-second-img-border {
+    border-radius: 235px;
+    border: 1px solid #502203;    
+    width: 308px;
+    height: 506px;
+}
