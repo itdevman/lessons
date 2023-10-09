@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 8</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Lesson 8: CSS-властивість background</h1>
+    </header>
+    <main>
+        <div class="container-css-properties">
+            <h2 class="title">Background. Керує елементом фону.
+            </h2>
+            <p class="text">
+                Це універсальна CSS-властивість дозволяє одночасно задати кілька параметрів фону, а саме визначити
+                колір, встановити фонове зображення, задати початкове положення фонового зображення, визначити як
+                повторюватиметься фонове зображення, встановити чи буде прокручуватиметься фонове зображення разом із
+                вмістом та масштабувати фонове зображення відповідно до заданих розмірів. Також значенням властивості
+                background може бути вказана градієнтна заливка фону.
+            </p>
+            <div class="properties">
+                <div class="property-block">
+                    <h2 class="property-title">Background-color</h2>
+                    <p class="property-description">Встановлює колір фону элемента</p>
+                    <div class="examples background-color">
+                        <p class="example-text">background: transparent; або background-color: transparent;</p>
+                        <div class="example-item ex1">
+                        </div>
+                        <p class="example-text">background: #1464fc; або background-color: #1464fc;</p>
+                        <div class="example-item ex2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-block">
+                    <h2 class="property-title">Background-image</h2>
+                    <p class="property-description">Встановлює фонове зображення для элемента або задає градієнтну
+                        заливку</p>
+                    <div class="examples background-image">
+                        <p class="example-text">background: url('../img/gerb.png'); або background-image:
+                            url('../img/gerb.png');</p>
+                        <div class="example-item ex1">
+                        </div>
+                        <p class="example-text">background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+                            rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);</p>
+                        <div class="example-item ex2">
+                        </div>
+                        <p class="example-text">background-image: radial-gradient(circle, rgba(131,58,180,1) 0%,
+                            rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);</p>
+                        <div class="example-item ex3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-block">
+                    <h2 class="property-title">Background-repeat</h2>
+                    <p class="property-description">Визначає, як має повторюватися фонове зображення</p>
+                    <div class="examples background-repeat">
+                        <p class="example-text">background-repeat: repeat;</p>
+                        <div class="example-item ex1">
+                        </div>
+                        <p class="example-text">background-repeat: no-repeat;</p>
+                        <div class="example-item ex2">
+                        </div>
+                        <p class="example-text">background-repeat: repeat-x;</p>
+                        <div class="example-item ex3">
+                        </div>
+                        <p class="example-text">background-repeat: repeat-y;</p>
+                        <div class="example-item ex4">
+                        </div>
+                        <p class="example-text">background-repeat: space;</p>
+                        <div class="example-item ex5">
+                        </div>
+                        <p class="example-text">background-repeat: round;</p>
+                        <div class="example-item ex6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-block">
+                    <h2 class="property-title">Background-position</h2>
+                    <p class="property-description">Задає початкове положення фонового зображення, де перше значення
+                        (відсотки, px, слово) визначає розташування по горизонталі, друге – вертикалі.</p>
+                    <div class="examples background-position">
+                        <p class="example-text">background-position: 0 0; або background-position: top left;</p>
+                        <div class="example-item ex1">
+                        </div>
+                        <p class="example-text">background-position: center; або background-position: 50% 50%;</p>
+                        <div class="example-item ex2">
+                        </div>
+                        <p class="example-text">background-position: left; або background-position: 0% 50%;</p>
+                        <div class="example-item ex3">
+                        </div>
+                        <p class="example-text">background-position: bottom right; або background-position: 100% 100%;
+                        </p>
+                        <div class="example-item ex4">
+                        </div>
+                        <p class="example-text">background-position: 20px 50px;</p>
+                        <div class="example-item ex5">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-block">
+                    <h2 class="property-title">Background-attachment</h2>
+                    <p class="property-description">Встановлює, чи прокручуватиметься фонове зображення разом із вмістом
+                        елемента.</p>
+                    <div class="examples background-attachment">
+                        <p class="example-text">background-attachment: scroll;</p>
+                        <div class="example-item ex1">
+                        </div>
+                        <p class="example-text">background-attachment: fixed;</p>
+                        <div class="example-item ex2">
+                        </div>
+                        <p class="example-text">background-attachment: local;</p>
+                        <div class="example-item ex3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, optio eos voluptatibus
+                                necessitatibus nemo perspiciatis molestiae et maxime modi quibusdam hic, earum vero
+                                ratione inventore officia accusamus nulla facilis, in culpa iure at illo quidem nesciunt
+                                soluta? Aliquid molestias at quidem eos possimus atque consequuntur quae id sunt
+                                asperiores. Ex voluptatibus illum unde incidunt natus animi ratione laborum nobis
+                                mollitia molestiae libero ea magni illo eaque, aut voluptatem error vel cupiditate iure
+                                necessitatibus, sit, aspernatur tempora odit numquam. Accusantium saepe, consequuntur
+                                soluta, autem laudantium neque quibusdam iusto consequatur ipsa tempora eum et alias ad
+                                tempore distinctio mollitia sit at rem ex adipisci laboriosam? Consequatur officia,
+                                temporibus animi dignissimos, sequi nostrum quod voluptatem iusto eos ipsa sunt sit
+                                dolores obcaecati debitis ab fuga. Molestiae hic provident dolores iste fuga eum,
+                                numquam fugiat necessitatibus veniam, ipsam nesciunt quasi obcaecati ea placeat ex,
+                                dicta debitis? Soluta, laborum voluptatem. Perspiciatis rerum accusantium quod
+                                necessitatibus. Vero quasi dolores atque. Tempora, perferendis eaque nulla odio quam
+                                suscipit enim quos quibusdam iste dignissimos doloremque labore veniam architecto amet,
+                                eveniet, veritatis explicabo accusantium sunt provident nihil. Et quidem harum obcaecati
+                                quaerat eius architecto vero quo cumque dolor, accusamus sunt, ipsa fugiat similique,
+                                sapiente ratione cupiditate animi dolore? Consectetur error labore voluptatum iste quam
+                                voluptatibus tenetur rem soluta voluptatem vel eum, vero, debitis officia accusamus esse
+                                similique exercitationem cum natus ea in nesciunt sint velit aut. Ipsa dolorum harum
+                                reiciendis vitae, ducimus quas quidem voluptate tempore eum nemo fugiat quae nesciunt
+                                laborum quos vero doloribus atque commodi ab earum. Error deleniti ducimus voluptates
+                                modi vero, distinctio repudiandae dolore deserunt ullam reiciendis. Cum nobis porro
+                                alias, harum doloribus saepe. Fuga aliquid, laudantium reprehenderit expedita quis
+                                voluptatum molestias magnam! Iusto voluptatibus exercitationem soluta neque officia
+                                doloremque possimus, impedit necessitatibus natus sit vero, velit pariatur repellat iure
+                                ullam quis delectus ab placeat?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-block">
+                    <h2 class="property-title">Background-size</h2>
+                    <p class="property-description">Масштабує фонове зображення згідно з заданими розмірами. У цифрах,
+                        де перше значення (відсотки, px) визначає ширину, друге – висоту. Або спеціальним значенням.</p>
+                    <div class="examples background-size">
+                        <p class="example-text">background-size: auto auto; (Розміри зображення за замовчуванням)</p>
+                        <div class="example-item ex1">
+                        </div>
+                        <p class="example-text">background-size: 100% auto; (Розміри зображення по ширині блоку)</p>
+                        <div class="example-item ex2">
+                        </div>
+                        <p class="example-text">background-size: auto 100%; (Розміри зображення по висоті блоку)</p>
+                        <div class="example-item ex3">
+                        </div>
+                        <p class="example-text">background-size: 100% 100%; (Розтягуємо зображення на всю висоту та
+                            ширину блоку)</p>
+                        <div class="example-item ex4">
+                        </div>
+                        <p class="example-text">background-size: contain; (Масштабує зображення зі збереженням пропорцій
+                            таким чином, щоб картинка повністю помістилася всередину блоку)</p>
+                        <div class="example-item ex5">
+                        </div>
+                        <p class="example-text">background-size: cover; (Масштабує зображення зі збереженням пропорцій
+                            так, щоб його ширина або висота дорівнювала ширині або висоті блоку)</p>
+                        <div class="example-item ex6">
+                        </div>
+                        <p class="example-text">background-size: 200px 150px; (Задає конкретні розміри зображення)</p>
+                        <div class="example-item ex7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property-block">
+                <h2 class="property-title">Встановлення кількох фонових зображень для блоку</h2>
+                <p class="property-description">Властивість background дозволяє задати кілька фонових зображень одному
+                    блоку, причому зі своїми налаштуваннями позиціонування масштабування та прокручування. Вказувати
+                    значення слід через кому.</p>
+                <div class="examples background-multiple">
+                    <p class="example-text">background: #1363fc url('../img/gerb.png') no-repeat; (Зображення + колір
+                        фону)</p>
+                    <div class="example-item ex1">
+                    </div>
+                    <p class="example-text">background: url('../img/gerb.png') left no-repeat,
+                        url('../img/background.jpg') 50%/cover no-repeat; (Два зображення)</p>
+                    <div class="example-item ex2">
+                    </div>
+                    <p class="example-text">background: url('../img/gerb.png') left no-repeat, url('../img/gerb.png')
+                        right no-repeat, url('../img/background.jpg') 50%/cover no-repeat; (Три зображення)</p>
+                    <div class="example-item ex3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-consulting1">
+            <div class="title-block">
+                <div class="sub-title-block">
+                    <div class="sub-title-rect"></div>
+                    <h3 class="sub-title-text">Welcome Whitecollar</h3>
+                </div>
+                <h2 class="title-text">We Care About Your
+                    Business Plan.</h2>
+            </div>
+            <p class="content-text">Leverage agile frameworks to provide a robust synopsis for high level
+                overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the
+                overal.</p>
+            <p class="content-text">Leverage agile frameworks to provide a robust synopsis for high level
+                overviews.Iterative approaches to corporate strategy </p>
+            <ul class="list">
+                <li class="list-item">Components of a Business Strategy</li>
+                <li class="list-item">Business Consulting</li>
+            </ul>
+            <div class="benefits-block">
+                <div class="benefit-item first exp-icon">
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Experience</h3>
+                        <p class="benefit-text">Leverage frameworks toprovidee werment.</p>
+                    </div>
+                </div>
+                <div class="benefit-item awards-icon">
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Awards Winner</h3>
+                        <p class="benefit-text">Leverage frameworks
+                            toprovidee werment.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="more-about-us">More About Us</a>
+        </div>
+
+        <div class="container-consulting2">
+            <div class="title-block">
+                <div class="sub-title-block">
+                    <div class="sub-title-rect"></div>
+                    <h3 class="sub-title-text">Latest Projects</h3>
+                </div>
+                <h2 class="title-text">Discover our latest client projects</h2>
+                <p class="content-text">Leverage agile frameworks to provide a robust synopsis for high level
+                    overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the
+                    overal.</p>
+            </div>
+            <div class="projects-list">
+                <div class="project-item project1">
+                    <h3 class="project-title">Financial Investment</h3>
+                    <div class="project-date">Sep 2022</div>
+                </div>
+                <div class="project-item project2">
+                    <h3 class="project-title">Marketing Strategy</h3>
+                    <div class="project-date">Sep 2022</div>
+                </div>
+                <div class="project-item project3">
+                    <h3 class="project-title">Business Consulting</h3>
+                    <div class="project-date">Sep 2022</div>
+                </div>
+                <div class="project-item project4">
+                    <h3 class="project-title">Financial Investment</h3>
+                    <div class="project-date">Sep 2022</div>
+                </div>
+                <div class="project-item project5">
+                    <h3 class="project-title">Web Development</h3>
+                    <div class="project-date">Sep 2022</div>
+                </div>
+                <div class="project-item project6">
+                    <h3 class="project-title">Financial Investment</h3>
+                    <div class="project-date">Sep 2022</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-women-clothing">
+            <div class="women-clothing-title">
+                <div class="women-clothing-title-rect"></div>
+                <h2 class="women-clothing-title-text">Clothing for Women Online in India</h2>
+            </div>
+            <div class="women-clothing-info">
+                <h3>Reexplore Women's Clothing Collection Online at Euphoria</h3>
+                <p>Women's Clothing – Are you searching for the best website to buy Clothing for Women online in India?
+                    Well, your search for the coolest and most stylish womens clothing ends here. From trendy Casual
+                    Womens Wear Online shopping to premium quality cotton women's apparel, <span
+                        class="marked-text">Euphoria</span> has closet of Women
+                    Collection covered with the latest and best designs of Women's Clothing Online.</p>
+                <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of
+                    choice in Womens Wear. </p>
+                <h3>One-Stop Destination to Shop Every Clothing for Women: Euphoria</h3>
+                <p>Today, Clothing for Women is gaining more popularity above all. This is because gone are the days
+                    when women were used to carrying uncomfortable fashion. Today, a lady looks prettier when she is in
+                    Casual Womens Wear which is a comfortable outfit. Concerning this, <span
+                        class="marked-text">Euphoria</span> has a big fat range of
+                    Stylish Women's Clothing that would make her the winner wherever she goes. </p>
+                <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of
+                    choice in Womens Wear. It is quite evident to say that there are very few Womens Clothing online
+                    stores where you can buy Western Wear for Women comprising the premium material and elegant design
+                    that you are always seeking for. Basically, </p>
+                <a href="#" class="link">See More</a>
+            </div>
+        </div>
+
+        <div class="container-fashion">
+            <div class="block left">
+                <h2 class="title">WE MADE YOUR EVERYDAY FASHION BETTER!</h2>
+                <p class="text">In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range -
+                    Comfortable & Affordable fashion 24/7</p>
+                <a href="#" class="link">Shop Now</a>
+            </div>
+            <div class="block right"></div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="footer">Lesson 8: CSS-властивість background</h2>
+    </footer>
+</body>
+
+</html>

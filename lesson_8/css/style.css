@@ -1,0 +1,602 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Inter", "sans-serif";
+    color: #666666;
+    font-size: 18px;
+}
+
+header,
+footer {
+    padding: 30px;
+    background-image: url("../img/colorful-background.jpg");
+}
+
+.header,
+.footer {
+    background-color: #fff;
+    color: #000000;
+    line-height: 150%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container-css-properties {
+    background-color: #ffecea;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.text {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.property-block {
+    background-color: #fff;
+    border: 2px solid #79a419;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.property-title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.property-description {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.examples {
+    border: 1px solid #79a419;
+    padding: 10px;
+}
+
+.example-item {
+    border: 1px solid #000;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    height: 220px;
+}
+
+.example-text {
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ----------------------*/
+.background-color .example-item {
+    height: 100px;
+}
+
+.background-color .ex1 {
+    background: transparent;
+}
+
+.background-color .ex2 {
+    color: #fff;
+    background: #1464fc;
+}
+
+/* ----------------------*/
+.background-image .ex1 {
+    background: url('../img/gerb.png');
+}
+
+.background-image .ex2 {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.background-image .ex3 {
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+/* ----------------------*/
+.background-repeat .example-item {
+    background-image: url('../img/smile.png');
+}
+
+.background-repeat .ex1 {
+    background-repeat: repeat;
+}
+
+.background-repeat .ex2 {
+    background-repeat: no-repeat;
+}
+
+.background-repeat .ex3 {
+    background-repeat: repeat-x;
+}
+
+.background-repeat .ex4 {
+    background-repeat: repeat-y;
+}
+
+.background-repeat .ex5 {
+    background-repeat: space;
+}
+
+.background-repeat .ex6 {
+    background-repeat: round;
+}
+
+/* ----------------------*/
+.background-position .example-item {
+    background-image: url('../img/gerb.png');
+    background-repeat: no-repeat;
+}
+
+.background-position .ex1 {
+    background-position: top left;
+}
+
+.background-position .ex2 {
+    background-position: center;
+}
+
+.background-position .ex3 {
+    background-position: left;
+}
+
+.background-position .ex4 {
+    background-position: bottom right;
+}
+
+.background-position .ex5 {
+    background-position: 20px 50px;
+}
+
+
+/* ----------------------*/
+.background-attachment .example-item {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+}
+
+.background-attachment .ex1 {
+    background-attachment: scroll;
+}
+
+.background-attachment .ex2 {
+    background-attachment: fixed;
+}
+
+.background-attachment .ex3 {
+    background-attachment: local;
+    overflow: auto;
+    color: #fff;
+}
+
+/* ----------------------*/
+.background-size .example-item {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.background-size .ex1 {
+    background-size: auto auto;
+}
+
+.background-size .ex2 {
+    background-size: 100% auto;
+}
+
+.background-size .ex3 {
+    background-size: auto 100%;
+}
+
+.background-size .ex4 {
+    background-size: 100% 100%;
+}
+
+.background-size .ex5 {
+    background-size: contain;
+}
+
+.background-size .ex6 {
+    background-size: cover;
+}
+
+.background-size .ex7 {
+    background-size: 200px 150px;
+}
+
+
+/* ----------------------*/
+.background-multiple .ex1 {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url('../img/gerb.png');
+    background-color: #1363fc;
+}
+
+.background-multiple .ex2 {
+    background: url('../img/gerb.png') left no-repeat, url('../img/background.jpg') 50%/cover no-repeat;
+}
+
+.background-multiple .ex3 {
+    background: url('../img/gerb.png') left no-repeat, url('../img/gerb.png') right no-repeat, url('../img/background.jpg') 50%/cover no-repeat;
+}
+
+
+/*------------------------*/
+.container-consulting1 {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.title-block {
+    margin-bottom: 20px;
+}
+
+.sub-title-block {
+    margin-bottom: 16px;
+}
+
+.sub-title-rect {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+
+.sub-title-text {
+    display: inline-block;
+    color: #37393F;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.21;
+}
+
+.title-text {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    width: 415px;
+}
+
+.content-text {
+    color: #7D7D7D;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-bottom: 15px;
+}
+
+.list {
+    margin-bottom: 20px;
+}
+
+.list-item {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin-bottom: 23px;
+    padding-left: 35px;
+    background: url("../img/list-item-icon.png") 0 3px no-repeat;
+    min-height: 30px;
+}
+
+.benefits-block {
+    margin-bottom: 37px;
+}
+
+.benefit-item {
+    display: inline-block;
+    padding: 30px 30px 30px 90px;
+    border: 1px solid #E3E3E3;
+}
+
+.benefit-item.first {
+    margin-right: 21px;
+}
+
+.benefit-content {
+    width: 173px;
+}
+
+.benefit-title {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+
+.benefit-text {
+    color: #7D7D7D;
+    font-family: "Inter", "sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.benefit-item.exp-icon {
+    background: url("../img/exp-icon.png") 32px 31px no-repeat;
+}
+
+.benefit-item.awards-icon {
+    background: url("../img/exp-icon.png") 32px 31px no-repeat;
+}
+
+.more-about-us {
+    display: inline-block;
+    background-color: #6B77E5;
+    padding: 21px 27px 22px 27px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-transform: capitalize;
+}
+
+/*---------------------------------------------------------------*/
+/*------------------------*/
+.container-consulting2 {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.container-consulting2 .title-block {
+    text-align: center;
+    width: 852px;
+    margin: 0 auto 47px auto;
+}
+
+.container-consulting2 .sub-title-block {
+    margin-bottom: 14px;
+}
+
+.container-consulting2 .sub-title-rect {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+
+.container-consulting2 .sub-title-text {
+    display: inline-block;
+    color: #37393F;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.21;
+}
+
+.container-consulting2 .title-text {
+    display: inline-block;
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    width: 415px;
+    margin-bottom: 14px;
+}
+
+.container-consulting2 .content-text {
+    color: #7D7D7D;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-bottom: 15px;
+}
+
+.projects-list {
+    font-size: 0;
+}
+
+.project-item {
+    display: inline-block;
+    padding-top: 525px;
+    width: 384px;
+    margin-right: 34px;
+    margin-bottom: 58px;
+}
+
+.project-title {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 127%;
+    margin-bottom: 10px;
+}
+
+.project-date {
+    color: #7D7D7D;
+    font-family: "Inter", "sans-serif";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-left: 25px;
+    background: url("../img/project-date-icon.png") no-repeat;
+}
+
+.project1 {
+    background: url("../img/project-1-image.png") no-repeat;
+}
+
+.project2 {
+    background: url("../img/project-2-image.png") no-repeat;
+}
+
+.project3 {
+    background: url("../img/project-3-image.png") no-repeat;
+    margin-right: 0;
+}
+
+.project4 {
+    background: url("../img/project-4-image.png") no-repeat;
+}
+
+.project5 {
+    background: url("../img/project-5-image.png") no-repeat;
+}
+
+.project6 {
+    background: url("../img/project-6-image.png") no-repeat;
+    margin-right: 0;
+}
+
+/*-------------------------------------*/
+.container-women-clothing {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    font-size: 20px;
+}
+
+.women-clothing-title {
+    color: #807D7E;
+    font-family: "Core Sans C", "sans-serif";
+    font-size: 0px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+.women-clothing-title-rect {
+    display: inline-block;
+    background-color: #8A33FD;
+    border-radius: 10px;
+    width: 6px;
+    margin-right: 15px;
+    height: 1.2em;
+    vertical-align: middle;
+    font-size: 28px;
+}
+
+.women-clothing-title-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;
+    color: #3C4242;
+}
+
+.women-clothing-info {
+    font-family: "Causten", "sans-serif";
+    color: #807D7E;
+    padding-left: 21px;
+    line-height: 167%;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.women-clothing-info h3 {
+    font-family: "Core Sans C", "sans-serif";
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.women-clothing-info p {
+    margin-bottom: 20px;
+}
+
+.women-clothing-info .marked-text {
+    font-weight: 700;
+}
+
+.women-clothing-info .link {
+    display: inline-block;
+    font-family: "Core Sans C", "sans-serif";
+    font-weight: 600;
+    color: #807D7E;
+    font-size: 20px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+
+/*---------------------*/
+.container-fashion {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px;
+    font-size: 0;
+}
+
+.container-fashion .block {
+    display: inline-block;
+    width: 50%;
+    height: 640px;
+    vertical-align: middle;
+}
+
+.container-fashion .block.left {
+    background: url("../img/fashion-left.png") 100% no-repeat;
+    padding: 183px 74px 0 74px;
+}
+
+.container-fashion .block.right {
+    background: url("../img/fashion-right.png") 100% no-repeat;
+}
+
+.container-fashion .left .title {
+    color: #fff;
+    font-family: "Core Sans C", "sans-serif";
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.47;
+    letter-spacing: 0.208px;
+    width: 466px;
+    margin-bottom: 30px;
+}
+
+.container-fashion .left .text {
+    color: #fff;
+    font-family: "Causten", "sans-serif";;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.container-fashion .left .link {
+    display: block;
+    width: 168px;
+    height: 46px;
+    color: #3C4242;
+    text-align: center;
+    font-family: "Causten", "sans-serif";;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 12px;
+}
