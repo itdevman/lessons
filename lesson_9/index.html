@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 9</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Lesson 9: Псевдокласи та псевдоелементи</h1>
+        <div class="menu-container">
+            <ul class="menu-items">
+                <li class="menu-item active"><a href="/">Псевдокласи та псевдоелементи</a></li>
+                <li class="menu-item"><a href="game.html" >Гра "Дійти до кінця"</a></li>
+                <li class="menu-item"><a href="maket.html">Блоки з макету</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="section-css-properties" class="section-css-properties">
+                <div class="container-css-properties">
+                    <h2 class="title">Псевдокласи стану
+                    </h2>
+                    <p class="text">
+                        Приклади використання псевдокласів стану
+                    </p>
+                    <div class="properties">
+                        <div class="property-block">
+                            <h2 class="property-title">:hover</h2>
+                            <p class="property-description">дозволяє стилізувати вигляд елементу у стані "при наведенні
+                                миші"
+                            </p>
+                            <div class="examples hover-property">
+                                <p class="example-text">Я додаю тінь до тексту та підкреслюю його при наведенні</p>
+                                <div class="example-item ex1">
+                                    наведи мишою на мене
+                                </div>
+                                <p class="example-text">Я змінюю свій колір фону та тексту при наведенні</p>
+                                <div class="example-item ex2">
+                                    наведи мишою на мене
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:active</h2>
+                            <p class="property-description">дозволяє стилізувати вигляд елементу у стані "при кліку
+                                миші"
+                            </p>
+                            <div class="examples active-property">
+                                <p class="example-text">Я додаю тінь до тексту та підкреслюю його при кліку</p>
+                                <div class="example-item ex1">
+                                    натисни на мене та не відпускай
+                                </div>
+                                <p class="example-text">Я змінюю свій колір фону та тексту при кліку</p>
+                                <div class="example-item ex2">
+                                    натисни на мене та не відпускай
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:visited та :focus</h2>
+                            <p class="property-description">:visited - дозволяє стилізувати вигляд елементу у стані
+                                "відвіданого посилання"
+                            </p>
+                            <p class="property-description">:focus - дозволяє стилізувати вигляд елементу у стані
+                                "фокусу"
+                            </p>
+                            <div class="examples visited-property">
+                                <p class="example-text">Якщо Ви натисните на одне із цих посилань - воно стане синім</p>
+                                <p class="example-text">Натискаючи клавішу TAB фокус буде перемикатися між посиланнями
+                                </p>
+                                <div class="example-item ex1">
+                                    <ul>
+                                        <li><a id="link1" href="#link1">Link1</a></li>
+                                        <li><a id="link2" href="#link2">Link2</a></li>
+                                        <li><a id="link3" href="#link3">Link3</a></li>
+                                        <li><a id="link4" href="#link4">Link4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:target</h2>
+                            <p class="property-description">:target - дозволяє стилізувати вигляд елементу у стані
+                                "звернення за посиланням від іншого обєкту"
+                            </p>
+                            <div class="examples target-property">
+                                <p class="example-text">Емуляція компоненту вкладок за допомогою :target</p>
+                                <div class="example-item ex1">
+                                    <div id="tab1"></div>
+                                    <div id="tab2"></div>
+                                    <div id="tab3"></div>
+                                    <div class="tab-links">
+                                        <a id="tab-link1" href="#tab1">Tab1</a>
+                                        <a id="tab-link2" href="#tab2">Tab2</a>
+                                        <a id="tab-link3" href="#tab3">Tab3</a>
+                                    </div>
+                                    <div id="tab-content1" class="tab-content">
+                                        <p>
+                                            Контент 1
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+                                            praesentium.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+                                            praesentium.
+                                        </p>
+                                    </div>
+                                    <div id="tab-content2" class="tab-content t2">
+                                        <p>
+                                            Контент 2
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+                                            praesentium.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+                                            praesentium.
+                                        </p>
+                                    </div>
+                                    <div id="tab-content3" class="tab-content t3">
+                                        <p>
+                                            Контент 3
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+                                            praesentium.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+                                            praesentium.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-css-properties">
+                    <h2 class="title">Псевдокласи "положення" в коді
+                    </h2>
+                    <p class="text">
+                        Приклади використання псевдокласів "положення" в коді
+                    </p>
+                    <div class="properties">
+                        <div class="property-block">
+                            <h2 class="property-title">:first-child</h2>
+                            <p class="property-description">Дозволяє стилізувати перший дочірній елемент
+                            </p>
+                            <div class="examples first-child-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:first-of-type</h2>
+                            <p class="property-description">Дозволяє стилізувати перший дочірній елемент конкретного
+                                типу
+                            </p>
+                            <div class="examples first-of-type-property">
+                                <p class="example-text">Я 1-й елемент - параграф</p>
+                                <div class="example-item">
+                                    2-й елемент DIV
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент DIV
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:last-child</h2>
+                            <p class="property-description">Дозволяє стилізувати останній дочірній елемент
+                            </p>
+                            <div class="examples last-child-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:last-of-type</h2>
+                            <p class="property-description">Дозволяє стилізувати останній дочірній елемент конкретного
+                                типу
+                            </p>
+                            <div class="examples last-of-type-property">
+                                <p class="example-text">Я 1-й елемент - параграф</p>
+                                <div class="example-item">
+                                    2-й елемент DIV
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент DIV
+                                </div>
+                                <p class="example-text">Я 4-й елемент - параграф</p>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:nth-child(порядковий номер)</h2>
+                            <p class="property-description">Дозволяє стилізувати елемент за порядковим номером:
+                                :nth-child(2)
+                            </p>
+                            <div class="examples nth-child-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:nth-child(кожен n + починаючи з)</h2>
+                            <p class="property-description">Дозволяє стилізувати елемент за формулою: :nth-child(2n + 3)
+                            </p>
+                            <div class="examples nth-child2-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                                <div class="example-item">
+                                    4-й елемент
+                                </div>
+                                <div class="example-item">
+                                    5-й елемент
+                                </div>
+                                <div class="example-item">
+                                    6-й елемент
+                                </div>
+                                <div class="example-item">
+                                    7-й елемент
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:nth-child(кожен n + починаючи з)</h2>
+                            <p class="property-description">Приклад стилізації парних/не парних рядків:
+                            </p>
+                            <div class="examples nth-child3-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                                <div class="example-item">
+                                    4-й елемент
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">:nth-child(кожен n + починаючи з)</h2>
+                            <p class="property-description">Приклад побудови сітки:
+                            </p>
+                            <div class="examples nth-child4-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                                <div class="example-item">
+                                    4-й елемент
+                                </div>
+                                <div class="example-item">
+                                    5-й елемент
+                                </div>
+                                <div class="example-item">
+                                    6-й елемент
+                                </div>
+                                <div class="example-item">
+                                    7-й елемент
+                                </div>
+                                <div class="example-item">
+                                    8-й елемент
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-css-properties">
+                    <h2 class="title">Псевдоклас виключення
+                    </h2>
+                    <p class="text">
+                        Приклади використання псевдокласу "виключення"
+                    </p>
+                    <div class="properties">
+                        <div class="property-block">
+                            <h2 class="property-title">:not</h2>
+                            <p class="property-description">Дозволяє стилізувати елемент за умови: :not(:last-child)
+                            </p>
+                            <div class="examples not-property">
+                                <div class="example-item">
+                                    1-й елемент
+                                </div>
+                                <div class="example-item">
+                                    2-й елемент
+                                </div>
+                                <div class="example-item">
+                                    3-й елемент
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-css-properties">
+                    <h2 class="title">Псевдоелементи ::before та ::after
+                    </h2>
+                    <p class="text">
+                        Приклади використання псевдоелементів
+                    </p>
+                    <div class="properties">
+                        <div class="property-block">
+                            <h2 class="property-title">::before</h2>
+                            <p class="property-description">Дозволяє додати контент та стилізувати його перед основноим
+                                елементом
+                            </p>
+                            <div class="examples before-property">
+                                <div class="example-item ex1">
+                                    <p>я параграф</p>
+                                </div>
+                                <div class="example-item ex2">
+                                    <p>мітка зліва це теж ::before</p>
+                                </div>
+                                <div class="example-item ex3">
+                                    <ul>
+                                        <li>Наведи на мене вказівник миші</li>
+                                        <li>Наведи на мене вказівник миші</li>
+                                        <li>Наведи на мене вказівник миші</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-block">
+                            <h2 class="property-title">::after</h2>
+                            <p class="property-description">Дозволяє додати контент та стилізувати його перед основноим
+                                елементом
+                            </p>
+                            <div class="examples after-property">
+                                <div class="example-item ex1">
+                                    <p>я параграф</p>
+                                </div>
+                                <div class="example-item ex2">
+                                    <p>мітка зправа це теж ::after</p>
+                                </div>
+                                <div class="example-item ex3">
+                                    <p>лінія під текстом це теж ::after</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu-container">
+            <ul class="menu-items">
+                <li class="menu-item active"><a href="/">Псевдокласи та псевдоелементи</a></li>
+                <li class="menu-item"><a href="game.html" >Гра "Дійти до кінця"</a></li>
+                <li class="menu-item"><a href="maket.html">Блоки з макету</a></li>
+            </ul>
+        </div>
+        <h2 class="footer">Lesson 9: Псевдокласи та псевдоелементи</h2>
+    </footer>
+</body>
+
+</html>

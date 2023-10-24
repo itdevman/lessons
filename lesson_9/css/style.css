@@ -1,0 +1,1045 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Inter", "sans-serif";
+    color: #666666;
+    font-size: 18px;
+}
+
+header,
+footer,
+body {
+    min-width: 1000px;
+}
+
+.header,
+.footer {
+    background-color: #fff;
+    color: #000;
+    line-height: 200%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+.menu-container {
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.menu-items {
+    display: inline-block;
+    padding: 15px 30px 15px 30px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu-item.active {
+    background-color: #e5ffe3;
+}
+
+.menu-item:hover>a {
+    text-shadow: 5px 5px 5px #1363fc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #e5ffe3;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.container-css-properties {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 20px;
+}
+
+.title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.text {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.property-block {
+    background-color: #fff;
+    border: 2px solid #79a419;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.property-title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.property-description {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.examples {
+    border: 1px solid #79a419;
+    padding: 10px;
+}
+
+.example-item {
+    border: 1px solid #000;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+.example-text {
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ---------:HOVER-------------*/
+.hover-property .example-item {
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hover-property .ex1 {
+    background: transparent;
+
+}
+
+.hover-property .ex1:hover {
+    background: transparent;
+    text-shadow: 5px 5px 5px red;
+    text-decoration: underline;
+}
+
+.hover-property .ex2 {
+    color: #f2f66d;
+    background: #1464fc;
+}
+
+.hover-property .ex2:hover {
+    color: #1464fc;
+    background: #f2f66d;
+}
+
+/* ---------:ACTIVE-------------*/
+.active-property .example-item {
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active-property .ex1:active {
+    background: transparent;
+    text-shadow: 5px 5px 15px rgb(60, 63, 204);
+    text-decoration: underline;
+}
+
+.active-property .ex2 {
+    color: #1464fc;
+    background: #f2f66d;
+}
+
+.active-property .ex2:active {
+    color: #f2f66d;
+    background: #1464fc;
+}
+
+
+/* ---------:VISITED AND FOCUS-------------*/
+.visited-property .example-item {
+    min-height: 100px;
+    text-align: center;
+}
+
+.visited-property .ex1 a {
+    color: #df3c4c;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.visited-property .ex1 a:hover {
+    text-decoration: underline;
+    background-color: #f5ffd1;
+}
+
+.visited-property .ex1 a:active {
+    color: #b6323f;
+}
+
+.visited-property .ex1 a:visited {
+    color: #1363fc;
+}
+
+.visited-property .ex1 a:focus {
+    outline: 5px dotted red;
+}
+
+/* ---------:TARGET-------------*/
+.target-property .example-item {
+    min-height: 172px;
+    text-align: center;
+}
+
+.target-property .ex1 a {
+    color: #df3c4c;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.target-property .ex1 a:hover {
+    text-decoration: underline;
+    background-color: #f5ffd1;
+}
+
+.target-property .ex1 a:active {
+    color: #b6323f;
+}
+
+.target-property .ex1 a:visited {
+    color: #1363fc;
+}
+
+.target-property .ex1 a:focus {
+    outline: 5px dotted red;
+}
+
+.target-property .tab-content {
+    color: #1464fc;
+    display: none;
+}
+
+.target-property .tab-content {
+    padding: 20px;
+}
+
+#tab1:target~.tab-links>#tab-link1 {
+    background-color: #fcff9a;
+}
+
+#tab2:target~.tab-links>#tab-link2 {
+    background-color: #a4fdb1;
+}
+
+#tab3:target~.tab-links>#tab-link3 {
+    background-color: #ff9f9f;
+}
+
+#tab1:target~#tab-content1 {
+    display: block;
+    background-color: #fcff9a;
+}
+
+#tab2:target~#tab-content2 {
+    display: block;
+    background-color: #a4fdb1;
+}
+
+#tab3:target~#tab-content3 {
+    display: block;
+    background-color: #ff9f9f;
+}
+
+
+/* ---------:first-child-------------*/
+.first-child-property div:first-child {
+    background-color: #8ab3ff;
+}
+
+/*---------:first-of-type-------------*/
+.first-of-type-property div:first-of-type {
+    background-color: #1cfc14;
+}
+
+/* ---------:last-child-------------*/
+.last-child-property div:last-child {
+    background-color: #8ab3ff;
+}
+
+/*---------:last-of-type-------------*/
+.last-of-type-property div:last-of-type {
+    background-color: #1cfc14;
+}
+
+/* ---------:nth-child-------------*/
+.nth-child-property div:nth-child(2) {
+    background-color: #8ab3ff;
+}
+
+/* ---------:nth-child-------------*/
+.nth-child2-property div:nth-child(2n + 3) {
+    background-color: #8ab3ff;
+}
+
+/* ---------:nth-child-------------*/
+.nth-child3-property div:nth-child(1n) {
+    background-color: #8ab3ff;
+}
+
+.nth-child3-property div:nth-child(2n) {
+    background-color: #ddf5b2;
+}
+
+/* ---------:nth-child-------------*/
+.nth-child4-property {
+    font-size: 0;
+}
+
+/* ---------:not-------------*/
+.not-property .example-item {
+    background: none;
+}
+
+/* ---------:before-------------*/
+.before-property .ex1>p::before {
+    content: "(я before)";
+    color: #1cfc14;
+}
+
+.before-property .ex2>p::before {
+    content: "";
+    display: inline-block;
+    background-color: #1cfc14;
+    width: 10px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.before-property .ex3 li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.before-property .ex3 li::before {
+    content: "";
+    background: url(../img/project-date-icon.png) 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    opacity: 0.3;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.before-property .ex3 li:hover::before {
+    opacity: 1;
+}
+
+.before-property .ex3 li:hover {
+    text-decoration: underline;
+    color: #111;
+    cursor: pointer;
+}
+
+
+/* ---------:after-------------*/
+.after-property .ex1>p::after {
+    content: "(я after)";
+    color: #ff5dce;
+}
+
+.after-property .ex2>p::after {
+    content: "";
+    display: inline-block;
+    background-color: #ff5dce;
+    width: 10px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.after-property .ex3>p {
+    display: inline-block;
+}
+
+.after-property .ex3>p::after {
+    content: "";
+    display: block;
+    background-color: #ff5dce;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.not-property :not(:last-child) {
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.nth-child4-property .example-item {
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+}
+
+.nth-child4-property div:nth-child(4n+1) {
+    width: 35%;
+    background-color: #ffabab;
+}
+
+.nth-child4-property div:nth-child(4n+2) {
+    width: 65%;
+    background-color: #b8a6ff;
+}
+
+.nth-child4-property div:nth-child(4n+3) {
+    width: 55%;
+    background-color: #7dff90;
+}
+
+.nth-child4-property div:nth-child(4n+4) {
+    width: 45%;
+    background-color: #fa5656;
+}
+
+
+/*-----------GAME-------------*/
+.game-container {
+    width: 1000px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 0;
+    height: 500px;
+}
+
+.game-container .win-text {
+    display: inline-block;
+    font-size: 32px;
+    color: #1464fc;
+    text-shadow: 3px 3px 3px #f2f66d;
+    font-weight: bold;
+    vertical-align: bottom;
+    margin-bottom: -120px;
+    margin-left: -140px;
+    visibility: hidden;
+}
+
+.game-container .line {
+    display: inline-block;
+    background-color: #1464fc;
+    visibility: hidden;
+}
+
+.game-container .line1 {
+    width: 40px;
+    height: 100px;
+    visibility: visible;
+}
+
+.game-container .line2 {
+    width: 300px;
+    height: 20px;
+}
+
+.game-container .line3 {
+    width: 20px;
+    height: 70px;
+}
+
+.game-container .line4 {
+    width: 350px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.game-container .line5 {
+    width: 40px;
+    height: 200px;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.game-container .line6 {
+    width: 600px;
+    height: 20px;
+    vertical-align: bottom;
+    margin-left: -620px;
+}
+
+.game-container .line7 {
+    width: 12px;
+    height: 200px;
+    vertical-align: bottom;
+    margin-left: -610px;
+    margin-bottom: -180px;
+}
+
+.game-container .line8 {
+    width: 200px;
+    height: 20px;
+    vertical-align: bottom;
+    margin-bottom: -180px;
+}
+
+.game-container .line9 {
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+    margin-bottom: -180px;
+    background-color: #1cfc14;
+}
+
+.game-container .line1:hover~.line2 {
+    visibility: visible;
+}
+
+.game-container .line2:hover,
+.game-container .line2:hover~.line3 {
+    visibility: visible;
+}
+
+.game-container .line3:hover,
+.game-container .line3:hover~.line4 {
+    visibility: visible;
+}
+
+.game-container .line4:hover,
+.game-container .line4:hover~.line5 {
+    visibility: visible;
+}
+
+.game-container .line5:hover,
+.game-container .line5:hover~.line6 {
+    visibility: visible;
+}
+
+.game-container .line6:hover,
+.game-container .line6:hover~.line7 {
+    visibility: visible;
+}
+
+.game-container .line7:hover,
+.game-container .line7:hover~.line8 {
+    visibility: visible;
+}
+
+.game-container .line8:hover,
+.game-container .line8:hover~.line9 {
+    visibility: visible;
+}
+
+.game-container .line9:hover,
+.game-container .line9:hover~.win-text {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line3:hover) .line2 {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line4:hover) .line:nth-child(-n + 3) {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line5:hover) .line:nth-child(-n + 4) {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line6:hover) .line:nth-child(-n + 5) {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line7:hover) .line:nth-child(-n + 6) {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line8:hover) .line:nth-child(-n + 7) {
+    visibility: visible;
+}
+
+.game-container:hover:has(.line9:hover) .line {
+    visibility: visible;
+}
+
+/*-----------consulting1-------------*/
+.consulting1-container {
+    padding: 30px;
+    margin: 0 auto;
+    width: 752px;
+    background-color: #fff;
+}
+
+.consulting1-container .image-benefits {
+    max-width: 100%;
+}
+
+.consulting1-container .title,
+.consulting1-container .sub-title,
+.consulting1-container .title-benefits,
+.consulting1-container .subtitle-benefits {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    line-height: 127%;
+    font-weight: 600;
+}
+
+.consulting1-container .title {
+    font-size: 30px;
+    margin-bottom: 12.5px;
+}
+
+.consulting1-container .text {
+    line-height: 146%;
+    margin-bottom: 40px;
+}
+
+.consulting1-container .sub-title {
+    color: #6B77E5;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.consulting1-container .benefits {
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+.consulting1-container *:last-child {
+    margin-bottom: 0;
+}
+
+.consulting1-container .image-benefits {
+    display: inline-block;
+    width: 331px;
+    margin-right: 29px;
+    height: 262px;
+    background: url("../img/consulting1-benefits.jpg") 0 0 / cover no-repeat;
+}
+
+.consulting1-container .content-benefits {
+    display: inline-block;
+    width: 332px;
+    font-size: 18px;
+}
+
+.consulting1-container .title-benefits {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.consulting1-container .subtitle-benefits {
+    color: #40DDB6;
+    font-size: 20px;
+    margin-bottom: 23.5px;
+}
+
+.consulting1-container .list-benefits li::before {
+    content: "";
+    background: url("../img/list-item-icon.png") 0 0 no-repeat;
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.consulting1-container .list-benefits li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+/*-----------consulting2-------------*/
+.consulting2-container {
+    padding: 30px;
+    margin: 0 auto;
+    width: 752px;
+    background-color: #fff;
+}
+
+.consulting2-container .text {
+    margin-bottom: 0;
+}
+
+.consulting2-container .title {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    line-height: 127%;
+    font-weight: 700;
+    width: 414px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.consulting2-container .text>p:not(:last-child) {
+    line-height: 146%;
+    margin-bottom: 16px;
+}
+
+.consulting2-container .title-block {
+    margin-bottom: 48px;
+}
+
+.consulting2-container .sub-title {
+    color: #37393F;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.consulting2-container .sub-title::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-color: #40DDB6;
+}
+
+.consulting2-container>*:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.consulting2-container .list-item {
+    border: 1px solid #E3E3E3;
+    padding: 28px 38px 28px 38px;
+}
+
+.consulting2-container .list-item:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+.consulting2-container .list .item-content {
+    display: inline-block;
+    width: 550px;
+}
+
+.consulting2-container .list .item-content .title {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.consulting2-container .list .item-content .text {
+    color: #7D7D7D;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 146%;
+    margin-bottom: 0;
+}
+
+.consulting2-container .list .list-item::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../img/list-item-icon.png") 0 0 no-repeat;
+    vertical-align: top;
+    margin-right: 19px;
+}
+
+.more-about-us {
+    display: inline-block;
+    background-color: #6B77E5;
+    padding: 21px 27px 22px 27px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-transform: capitalize;
+}
+
+.more-about-us:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.more-about-us:active {
+    background-color: #5e69cb;
+}
+
+
+
+/*-----------consulting3-------------*/
+.consulting3-container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 1240px;
+    background-color: #fff;
+}
+
+.consulting3-container .title-block {
+    margin-bottom: 41px;
+    text-align: center;
+}
+
+.consulting3-container .text {
+    margin-bottom: 0;
+}
+
+.consulting3-container .title {
+    color: #37393F;
+    font-family: "Poppins", "sans-serif";
+    line-height: 127%;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+
+.consulting3-container .text>p:not(:last-child) {
+    line-height: 146%;
+    margin-bottom: 16px;
+}
+
+.consulting3-container .sub-title {
+    color: #37393F;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.consulting3-container .sub-title::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-color: #40DDB6;
+}
+
+.consulting3-container .list {
+    text-align: center;
+    font-size: 0;
+    padding-top: 36px;
+}
+
+.consulting3-container .list-item {
+    display: inline-block;
+    font-size: 0;
+}
+
+.consulting3-container .list .item-content {
+    width: 386px;
+    padding: 58px 43px;
+    background: #F4F4F4;
+}
+
+.consulting3-container .list .item-content:hover {
+    box-shadow: 1px 1px 5px #a4a4a4;
+}
+
+.consulting3-container .list-item.list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.consulting3-container .list .item-content .title {
+    color: #37393F;
+    text-align: center;
+    font-family: "Poppins", "sans-serif";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 127%;
+    margin-bottom: 16px;
+}
+
+.consulting3-container .list .item-content .text {
+    color: #7D7D7D;
+    text-align: center;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146%;
+    margin-bottom: 37px;
+}
+
+.consulting3-container .list .link {
+    display: block;
+    color: #6B77E5;
+    text-align: center;
+    font-family: "Inter", "sans-serif";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.consulting3-container .list .link:hover {
+    text-decoration: underline;
+}
+
+.consulting3-container .list .item-content.item1::before {
+    content: "";
+    background: url("../img/work1.png") center no-repeat;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -94px;
+    vertical-align: top;
+}
+
+.consulting3-container .list .item-content.item2::before {
+    content: "";
+    background: url("../img/work2.png") center no-repeat;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -94px;
+    vertical-align: top;
+}
+
+.consulting3-container .list .item-content.item3::before {
+    content: "";
+    background: url("../img/work3.png") center no-repeat;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -94px;
+    vertical-align: top;
+}
+
+/*-----------Jewels-------------*/
+.jew-container {
+    width: 1234px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.jew-container .title {
+    display: inline-block;
+    width: 475px;
+    color: #000;
+    font-family: "Cormorant Infant", "serif";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    margin-top: 150px;
+    vertical-align: top;
+}
+
+.jew-container .title::after {
+    content: "";
+    display: block;
+    background-color: #78473B;
+    height: 3px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.jew-container .img1-box {
+    display: inline-block;
+    width: 334px;
+    font-size: 0;
+    margin-top: 32px;
+}
+
+.jew-container .img1-box .rect {
+    border: 1px solid #000;
+    height: 380px;
+}
+
+.jew-container .img1-box .text {
+    color: #000;
+    font-family: "Cormorant Infant", "serif";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.jew-container .img1-box .text:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.jew-container .img1-box .img {
+    margin-left: 10px;
+    margin-top: -370px;
+    width: 334px;
+    background: url("../img/jew1.png") 0 0 / cover no-repeat;
+    height: 380px;
+    margin-bottom: 25px;
+}
+
+/*-----------------------------*/
+.jew-container .img2-box {
+    display: inline-block;
+    width: 334px;
+    font-size: 0;
+    margin-left: 55px;    
+    vertical-align: top;
+}
+
+.jew-container .img2-box .img-title {
+    color: #000;
+    font-family: "Cormorant Infant", "serif";
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 113%;
+    margin-bottom: 31px;
+}
+
+.jew-container .img2-box .rect {
+    border: 1px solid #000;
+    height: 380px;
+}
+
+.jew-container .img2-box .text {
+    color: #000;
+    font-family: "Cormorant Infant", "serif";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.jew-container .img2-box .text:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.jew-container .img2-box .img {
+    margin-left: 10px;
+    margin-top: -370px;
+    width: 334px;
+    background: url("../img/jew2.png") 0 0 / cover no-repeat;
+    height: 380px;
+    margin-bottom: 25px;
+}
